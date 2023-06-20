@@ -1,19 +1,33 @@
 import './App.css';
+import '../assets/styles/kings.css';
+import sisebutoUrl from '../assets/images/reyes/rey_sisebuto.png';
+import leogivildoUrl from '../assets/images/reyes/rey_leogivildo.png';
+import atanagildoUrl from '../assets/images/reyes/rey_atanagildo.png';
 
 function App() {
-  let nombre = 'sebastian';
-  let apellido = 'contreras';
-  let caja = (
-    <div>
-      My name is {nombre} {apellido}
-    </div>
-  );
+  let kings = [
+    {
+      name: 'Sisebuto',
+      url: sisebutoUrl,
+    },
+    {
+      name: 'Leogivildo',
+      url: leogivildoUrl,
+    },
+    {
+      name: 'Atanagildo',
+      url: atanagildoUrl,
+    },
+  ];
 
   return (
-    <div className="fondo">
-      <h1>React App</h1>
-      <input type="text" placeholder="Enter your name" value={nombre} />
-      <p>{caja}</p>
+    <div className="kings-container">
+      {kings.map((item, index) => (
+        <div className="kings-child">
+          <img src={item.url} alt={item.name} />
+          <p key={index}>{item.name}</p>
+        </div>
+      ))}
     </div>
   );
 }
