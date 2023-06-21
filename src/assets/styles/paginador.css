@@ -1,0 +1,25 @@
+button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1em;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 200;
+    margin: 0.5em;
+  }
+  
+  .kigns-text {
+    font-size: 1em;
+    font-weight: 200;
+    font-size: 1.5em;
+    padding: 1px;
+    margin: 0.5em;
+  }
+  
+  .kings-name {
+    color: red;
+  }
+  
+  .kings-afi {
+    color: green;
+  }

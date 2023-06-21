@@ -1,7 +1,7 @@
 import '../assets/styles/convertidor.css';
 import { useState } from 'react';
 
-const App = () => {
+const Convertidor = () => {
   const [peso, setPeso] = useState(1);
   const [euro, setEuro] = useState(0);
   const [dolar, setDolar] = useState(0);
@@ -34,4 +34,4 @@ const App = () => {
     </>
   );
 };
-export default App;
+export default Convertidor;
